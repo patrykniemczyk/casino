@@ -40,12 +40,12 @@ export default function Home() {
         }`}
       >
         <div
-          className={`rounded-full px-8 py-4 mx-4 transition-all duration-300 ${
+          className={`rounded-full px-12 py-4 mx-2 transition-all duration-300  w-full ${
             hasScrolled ? "bg-white/90 backdrop-blur-md shadow-lg" : ""
           }`}
         >
-          <div className="flex items-center justify-between mx-auto space-x-60 whitespace-nowrap">
-            <div className="flex items-center space-x-3">
+          <div className="flex items-center justify-between w-full max-w-6xl mx-auto px-4">
+            <div className="flex items-center space-x-3 flex-shrink-0">
               <div className="h-8 w-8 flex items-center justify-center">
                 <Coins className="h-5 w-5 text-black" />
               </div>
@@ -53,7 +53,7 @@ export default function Home() {
                 Staszic Casino
               </span>
             </div>
-            <nav className="hidden md:flex items-center space-x-8 whitespace-nowrap">
+            <nav className="hidden md:flex items-center space-x-8 whitespace-nowrap ml-60 mr-60">
               <a
                 href="#how-it-works"
                 className="text-gray-600 hover:text-gray-900 font-medium text-sm"
@@ -73,7 +73,7 @@ export default function Home() {
                 Leaderboard
               </a>
             </nav>
-            <div className="flex items-center space-x-4 whitespace-nowrap">
+            <div className="flex items-center space-x-4 whitespace-nowrap flex-shrink-0">
               <a href="/login">
                 <Button
                   variant="ghost"
@@ -197,7 +197,7 @@ export default function Home() {
                       <div>
                         <p className="font-bold text-gray-900 ">Your Tokens</p>
                         <p className="text-sm text-gray-600 font-medium ">
-                          1,250 available
+                          1,000 available
                         </p>
                       </div>
                     </div>
@@ -233,8 +233,8 @@ export default function Home() {
 
             <div className="grid md:grid-cols-3 gap-12">
               <div className="text-center">
-                <div className="w-16 h-16 bg-black rounded-3xl flex items-center justify-center mx-auto mb-6">
-                  <span className="text-2xl font-bold text-white font-display">
+                <div className="w-16 h-16 border-black border-4 rounded-3xl flex items-center justify-center mx-auto mb-6">
+                  <span className="text-2xl font-bold text-black font-display">
                     1
                   </span>
                 </div>
@@ -248,8 +248,8 @@ export default function Home() {
               </div>
 
               <div className="text-center">
-                <div className="w-16 h-16 bg-black rounded-3xl flex items-center justify-center mx-auto mb-6">
-                  <span className="text-2xl font-bold text-white font-display">
+                <div className="w-16 h-16 border-black border-4 rounded-3xl flex items-center justify-center mx-auto mb-6">
+                  <span className="text-2xl font-bold text-black font-display">
                     2
                   </span>
                 </div>
@@ -263,8 +263,8 @@ export default function Home() {
               </div>
 
               <div className="text-center">
-                <div className="w-16 h-16 bg-black rounded-3xl flex items-center justify-center mx-auto mb-6">
-                  <span className="text-2xl font-bold text-white font-display">
+                <div className="w-16 h-16 border-black border-4 rounded-3xl flex items-center justify-center mx-auto mb-6">
+                  <span className="text-2xl font-bold text-black font-display">
                     3
                   </span>
                 </div>
