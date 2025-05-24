@@ -28,7 +28,7 @@ export default function Dashboard() {
                 <div className="w-8 h-8 bg-yellow-400 rounded-full flex items-center justify-center">
                   <Coins className="h-4 w-4 text-yellow-800" />
                 </div>
-                <span className="font-bold text-gray-900">1,250 tokens</span>
+                <span className="font-bold text-gray-900">1,000 tokens</span>
               </div>
             </div>
           </div>
@@ -36,17 +36,16 @@ export default function Dashboard() {
       </header>
 
       {/* Main Content */}
-      <main className="container mx-auto px-6 py-12">
+      <main className="container mx-auto px-6 py-16">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h1 className="text-4xl font-bold font-display mb-4">
               Your Gaming Dashboard
             </h1>
             <p className="text-xl text-gray-600 font-medium">
-              Choose a game to start playing or check your stats
+              Choose a game to start playing or join your friends
             </p>
           </div>
-
           {/* Games Grid */}
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             {/* Roulette */}
@@ -88,7 +87,7 @@ export default function Dashboard() {
                   strategy to win.
                 </p>
                 <Button className="w-full bg-green-500 hover:bg-green-600 text-white rounded-full font-semibold">
-                  Join Poker Table
+                  Play Poker
                 </Button>
               </div>
             </div>
@@ -114,33 +113,35 @@ export default function Dashboard() {
                 <Button className="w-full bg-blue-500 hover:bg-blue-600 text-white rounded-full font-semibold">
                   Play Blackjack
                 </Button>
-              </div>
+              </div>{" "}
             </div>
           </div>
-
-          {/* Stats Section */}
-          <div className="bg-white rounded-3xl shadow-lg border border-gray-100 p-8">
-            <h2 className="text-2xl font-bold font-display mb-6">Your Stats</h2>
-            <div className="grid md:grid-cols-4 gap-6">
+          {/* Join Table Section */}{" "}
+          <div className="bg-white rounded-3xl shadow-lg border border-gray-100 overflow-hidden hover:shadow-xl transition-shadow duration-300">
+            <div className="p-8">
               <div className="text-center">
-                <div className="text-3xl font-bold text-green-600 mb-2">15</div>
-                <p className="text-gray-600 font-medium">Games Won</p>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-red-600 mb-2">8</div>
-                <p className="text-gray-600 font-medium">Games Lost</p>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-blue-600 mb-2">
-                  2,450
+                <div className="flex items-center justify-center mb-4">
+                  <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mr-4">
+                    <Users className="h-6 w-6 text-purple-600" />
+                  </div>
+                  <h3 className="text-2xl font-bold font-display">
+                    Join Existing Table
+                  </h3>
                 </div>
-                <p className="text-gray-600 font-medium">Total Tokens Won</p>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-purple-600 mb-2">
-                  #7
+                <p className="text-gray-600 mb-6 font-medium">
+                  Join your friends at an existing game table and start playing
+                  together!
+                </p>{" "}
+                <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+                  <input
+                    type="text"
+                    placeholder="Enter table code..."
+                    className="flex-1 px-4 py-3 text-sm border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent"
+                  />
+                  <Button className="bg-purple-500 hover:bg-purple-600 text-white rounded-full font-semibold px-6 py-3 text-sm">
+                    Join
+                  </Button>
                 </div>
-                <p className="text-gray-600 font-medium">Leaderboard Rank</p>
               </div>
             </div>
           </div>
