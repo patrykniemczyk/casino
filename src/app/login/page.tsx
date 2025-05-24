@@ -23,7 +23,6 @@ export default function Login() {
               Staszic Casino
             </span>
           </div>
-          <h1 className="text-3xl font-bold font-display mb-2">Welcome Back</h1>
           <p className="text-gray-600 font-medium">
             Sign in to your account to continue playing
           </p>
@@ -78,7 +77,7 @@ export default function Login() {
               <label className="flex items-center">
                 <input
                   type="checkbox"
-                  className="w-4 h-4 text-black focus:ring-black border-gray-300 rounded"
+                  className="w-4 h-4 text-black focus:ring-black border-gray-300 accent-black"
                 />
                 <span className="ml-2 text-sm text-gray-600 font-medium">
                   Remember me
@@ -94,7 +93,7 @@ export default function Login() {
 
             <Button
               type="submit"
-              className="w-full bg-black hover:bg-gray-800 text-white rounded-xl py-3 font-semibold text-lg"
+              className="w-full bg-black hover:bg-gray-800 text-white rounded-xl py-6 font-semibold text-lg"
             >
               Sign In
             </Button>
@@ -102,7 +101,7 @@ export default function Login() {
 
           <div className="mt-6 text-center">
             <p className="text-gray-600 font-medium">
-              Don't have an account?{" "}
+              Don&apos;t have an account?{" "}
               <Link
                 href="/signup"
                 className="font-semibold text-black hover:text-gray-700"
