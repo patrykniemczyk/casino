@@ -1,4 +1,4 @@
-import type { Config } from "tailwindcss"
+import type { Config } from "tailwindcss";
 import tailwindcssAnimate from "tailwindcss-animate";
 
 const config = {
@@ -22,6 +22,7 @@ const config = {
     extend: {
       fontFamily: {
         sans: [
+          "Aeonik",
           "Inter",
           "-apple-system",
           "BlinkMacSystemFont",
@@ -35,7 +36,15 @@ const config = {
           "Helvetica Neue",
           "sans-serif",
         ],
-        display: ["Inter", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "sans-serif"],
+        display: [
+          "Aeonik",
+          "Inter",
+          "-apple-system",
+          "BlinkMacSystemFont",
+          "Segoe UI",
+          "Roboto",
+          "sans-serif",
+        ],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -94,6 +103,6 @@ const config = {
     },
   },
   plugins: [tailwindcssAnimate],
-} satisfies Config
+} satisfies Config;
 
-export default config
+export default config;
