@@ -4,32 +4,31 @@ import Link from "next/link";
 
 export default function Dashboard() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-200 via-indigo-200 to-purple-200 font-sans">
+    <div className="min-h-screen bg-gray-100 font-sans">
       {/* Header */}
-      <header className="bg-white/90 backdrop-blur-md shadow-lg">
+      <header className="bg-white border-b border-gray-200">
         <div className="container mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
-            <div className="flex items-center space-x-4">
-              <Link href="/" className="flex items-center space-x-2">
-                <ArrowLeft className="h-5 w-5 text-gray-600" />
-                <span className="text-gray-600 font-medium">Back to Home</span>
-              </Link>
-            </div>
+            <Link
+              href="/"
+              className="flex items-center space-x-2 text-gray-600 hover:text-gray-900 transition-colors"
+            >
+              <ArrowLeft className="h-5 w-5" />
+              <span className="font-medium">Back to Home</span>
+            </Link>
+
             <div className="flex items-center space-x-3">
-              <div className="h-8 w-8 flex items-center justify-center">
-                <Coins className="h-5 w-5 text-black" />
+              <div className="h-8 w-8 bg-black rounded-lg flex items-center justify-center">
+                <Coins className="h-4 w-4 text-white" />
               </div>
-              <span className="text-lg font-bold font-display">
-                Staszic Casino Dashboard
-              </span>
+              <span className="text-xl font-bold text-black">Dashboard</span>
             </div>
-            <div className="flex items-center space-x-4">
-              <div className="flex items-center space-x-2">
-                <div className="w-8 h-8 bg-yellow-400 rounded-full flex items-center justify-center">
-                  <Coins className="h-4 w-4 text-yellow-800" />
-                </div>
-                <span className="font-bold text-gray-900">1,000 tokens</span>
+
+            <div className="flex items-center space-x-2">
+              <div className="w-8 h-8 bg-yellow-400 rounded-full flex items-center justify-center">
+                <Coins className="h-4 w-4 text-yellow-800" />
               </div>
+              <span className="font-bold text-gray-900">1,000 tokens</span>
             </div>
           </div>
         </div>
@@ -138,7 +137,7 @@ export default function Dashboard() {
                     placeholder="Enter table code..."
                     className="flex-1 px-4 py-3 text-sm border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent"
                   />
-                  <Button className="bg-purple-500 hover:bg-purple-600 text-white rounded-full font-semibold px-6 py-3 text-sm">
+                  <Button className="bg-purple-500 hover:bg-purple-600 text-white rounded-full font-semibold px-6 py-6 text-sm">
                     Join
                   </Button>
                 </div>
